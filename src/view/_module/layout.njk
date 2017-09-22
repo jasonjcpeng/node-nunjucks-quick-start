@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+{% block head %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <script src='lib/require.js'></script>
+  {% block css %}
+  {# css #}
+  {% endblock %}
+  {% block lib %}
+  {# script #}
+  {% endblock %}
+</head>
+{% endblock%}
+<body>
+{% include "./fragment/head.njk"%}
+{% block body %}
+{# body #}
+{% endblock %}
+
+{% block footer %}
+{# footer #}
+{% endblock %}
+</body>
+

@@ -1,0 +1,14 @@
+{% extends "./_module/layout.njk"%}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="css/index.css">
+{% endblock %}
+{% block lib %}
+<script>
+requirejs(['lib/common'], function (common) {
+  requirejs(['index']);
+});
+</script>
+{% endblock %}
+{% block body %}
+  <a href="home">Link to home</a>
+{% endblock %}
