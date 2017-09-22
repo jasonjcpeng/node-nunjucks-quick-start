@@ -1,10 +1,10 @@
-##基于node和nunjucks模板引擎构造的MVC框架
+## 基于node和nunjucks模板引擎构造的MVC框架
 >自更新的开发环境需全局安装node-supervisor 
 ````js
   npm install supervisor -g
 ````
 >建议使用VScode,加装Easy LESS拓展
-####个人偏好的VScode设置
+#### 个人偏好的VScode设置
 ````js
 {
     "editor.fontSize": 16,
@@ -17,7 +17,7 @@
       }
 }
 ````
-####顺便记录一把个人偏好的VScode按键设置 :-D
+#### 顺便记录一把个人偏好的VScode按键设置 :-D
 ````js
 [
     {
