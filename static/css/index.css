@@ -1,3 +1,10 @@
-h1 {
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+body h1 {
   color: #277DE0;
+}
+body input {
+  width: 30%;
 }

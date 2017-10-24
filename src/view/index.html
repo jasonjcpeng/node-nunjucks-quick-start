@@ -11,4 +11,10 @@ requirejs(['lib/common'], function (common) {
 {% endblock %}
 {% block body %}
   <a href="home">Link to home</a>
+  <h2>{{content}}</h2>
+  <form action="/post" method="POST" >
+    <input  type="text" name="content"/>
+    <button type="submit">提交</button>
+  </form>
 {% endblock %}
+

@@ -1,6 +1,6 @@
+const koaBody = require('koa-body');
 const CIndex = require('../controller/index');
 const CHome = require('../controller/home');
-
 
 class RouterIndex {
   constructor() {
@@ -13,6 +13,7 @@ class RouterIndex {
   }
   routeIndex(router) {
     router.get('/', this.index.getController());
+    router.post('/post', koaBody(), this.index.postController());
   }
   routeHome(router) {
     router.get('/home', this.home.getController());

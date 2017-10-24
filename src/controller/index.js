@@ -4,11 +4,13 @@ class ControllerIndex {
   }
   getController() {
     return async (ctx) => {
-      this.render(ctx);
+      await ctx.render(this.html, { title: 'index pager', content: 'Here is some content text' });
     };
   }
-  render(ctx) {
-    ctx.render(this.html, { title: 'index pager', content: 'Here is some content text' });
+  postController() {
+    return async (ctx) => {
+      await ctx.render(this.html, { title: 'index pager', content: ctx.request.body.content });
+    };
   }
 }
 
