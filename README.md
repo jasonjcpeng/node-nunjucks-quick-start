@@ -14,7 +14,9 @@
     "workbench.iconTheme": "vscode-icons",
     "less.compile": {//Easy Less设置
         "out": "${workspaceRoot}\\static\\css\\"
-      }
+      },
+    "vsicons.dontShowNewVersionMessage": true,
+    "emmet.triggerExpansionOnTab": true
 }
 ````
 #### 顺便记录一把个人偏好的VScode按键设置 :-D
